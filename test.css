@@ -1,0 +1,37 @@
+.amir{
+    color: blue;
+}
+
+div{
+    background-color: blueviolet;
+    width: 200px;
+    height: 200px;
+}
+
+.textzentrieren{
+    text-align: center;
+}
+
+a:link{
+    color: red;
+}
+a:visited{
+    color: green
+}
+
+a:hover{
+    color: blueviolet;
+   
+}
+
+a:active{
+    color: aqua;
+   
+}
+
+.textstyle{
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 150%;
+}

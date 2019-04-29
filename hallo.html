@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="de-DE">
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,7 +11,7 @@
         Hier kannst du ein Kommentar
         eingeben
     -->
-    <h1>Hallo Amir</h1>
+    <h1 title="Hier ist dein Name">Hallo Amir</h1>
     <!--
         Überschriften sind wichtig für die Google suche
 
@@ -85,8 +85,81 @@
             <li>Spagetti</li>
     
     </ol>        
+    <!-- Hier wird der Text im <b> und <strong> tag Fett angezeigt, strong zeigt zusätzlich die
+        wichtigkeit eines textes-->
+    <p><b>ipsum dolor sit amet, consetetur sadipscing elitr</b> ipsum dolor sit amet, 
+        consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut<br> 
+        labore et dolore magna aliquyam erat, sed diam voluptua.<br> 
+        At vero <strong>eos et accusam et justo duo dolores et ea rebum</strong>. <br> 
+        clita kasd gubergren, 
+        no sea takimata sanctus est Lorem ipsum dolor sit amet. <br>
+        <!-- Im <i> und <em> tag wird der text kursiv angezeigt, das <em> tag hat 
+            auch eine Art befehlsdeutung-->
+        <i> ipsum dolor sit amet</i> ipsum dolor sit amet, <em>sadipscing elitr</em> 
+        sadipscing elitr, sed diam nonumy eirmod tempor <br>
+        <!--Das <mark> tag ist für die Markierung zuständig, <small> tag für das verkleinern
+            von Text, <sub> tag setz den text etwas weiter runter,<sup> tag setzt text 
+            was höher, <del> tag ist für das durchstreichen von Text zuständig,
+                <ins> tag unterstreicht den Text-->
+        <mark>invidunt ut labore</mark> et <small>dolore magna aliquyam</small>
+        dolore <sub>magna aliquyam erat</sub>magna aliquyam erat, sed diam voluptua.<br> 
+        At <sup>vero eos et accusam</sup>vero eos <del>et accusam et justo duo</del>et accusam
+        et justo duo dolores et ea rebum. Stet clita kasd<br> 
+        gubergren, <ins>no sea takimata sanctus </ins>no sea takimata sanctus 
+        est Lorem ipsum dolor sit amet.</p>
+        <!--So werden Sonderzeichen wie Copyright, Währungen und weiteres angezeigt, weitere 
+        kann man in mediaevent.de/tutorial/sonderzeichen.html finden-->
+        &#169;
+        &copy;
+        &cent;
+        &euro;
+<h2>HTML Formulare</h2>
+<!--Dies sind verschieden Strukturen für Formulare-->
+<form action="/login.php">
+    <input type="text" name="username" value="Amir">
+    <input type="password" name="password" >
+    <input type="submit" value="Einloggen">
+</form>
+<form>
+    <input type="radio" name="geschlecht" value="Männlich">Männlich<br>
+    <input type="radio" name="geschlecht" value="Weiblich">Weiblich<br>
+    <input type="radio" name="geschlecht" value="ohne-Angabe" checked>ohne-Angabe<br>
 
+</form>
+<form>
+    <fieldset>
+        <input type="radio" name="geschlecht" value="Männlich">Männlich<br>
+        <input type="radio" name="geschlecht" value="Weiblich">Weiblich<br>
+        <input type="radio" name="geschlecht" value="ohne-Angabe" checked>ohne-Angabe<br>
+    </fieldset>
+</form>
+<form>
+    <fieldset>
+        <input type="checkbox" name="Pizza" value="schinken">Schinken<br>
+        <input type="checkbox" name="Pizza" value="Salami">Salami<br>
+        <input type="checkbox" name="Pizza" value="Pilze">Pilze<br>
 
+    </fieldset>
+</form>
+<form>
+    <fieldset>
+        <input type="email" name="email" minlength="8" 
+        maxlength="20" size="40" autocomplete="off" placeholder="Deine Emailadresse">
+    </fieldset>
+</form>
+<form>
+    <input type="color" name="lieblingsfarbe">
+</form>
+<form>
+    <input type="date" name="geburtstag">
+</form>
+
+<form>
+    <input type="file" name="anhang">
+</form>
+<form>
+    <input type="number" name="anzahl" min="1" max="10">
+</form>
 </body>
 
 
