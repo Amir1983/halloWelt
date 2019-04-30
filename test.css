@@ -2,7 +2,7 @@
     color: blue;
 }
 
-div{
+h3 + div{
     background-color: blueviolet;
     width: 200px;
     height: 200px;
@@ -34,4 +34,179 @@ a:active{
     font-style: italic;
     font-weight: bold;
     font-size: 150%;
+}
+
+#hintergrund{
+    background: url("insel.jpg") no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+}
+
+#aussen{
+    margin: auto;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    border: 5px solid black;
+}
+
+#drunter{
+    margin: 10px auto;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    border: 5px solid black;
+    text-align: center;
+}
+
+ol{
+    background: #801515;
+    width: 25%;
+}
+
+ol li{
+    background: #D46A6A;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+ul{
+    background: #FFEAAA;
+    padding: 20px;
+    list-style: none;
+    width: 25%;
+}
+
+ul li{
+    background: #D4BA6A;
+    margin: 5px;
+}
+table{
+    width: 25%;
+    border-collapse: collapse;
+
+}
+
+td{
+    text-align: center;
+}
+tr:nth-child(even){
+    background-color: grey;
+}
+
+tr:nth-child(odd){
+    background-color: aqua;
+}
+
+th{
+    background-color: #D4BA6A;
+}
+.festkleben{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    border: 2px solid red;
+
+}
+.fixieren{
+position: fixed;
+top: 10%;
+left: 50px;
+background-color: #FFEAAA;
+}
+.container{
+position: relative;
+}
+.obenlinks{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 22px;
+    color: #801515;
+}
+
+.mittig{
+position: absolute;
+top: 50%;
+left: 0;
+width: 100%;
+text-align: center;
+font-size: 20px;
+color: white;
+background-color: #801515;
+}
+
+.bild{
+    width: 100%;
+}
+.bildplatzieren{
+    float: right;
+    width: 200px;
+    height: 200px;
+}
+span{
+    background-color: green;
+}
+.verschwinden{
+display: none;
+}
+.innerzeile{
+/* hier kann mann keine veränderung wie höhe oder ähnliches angeben */
+display: inline;
+}
+.alsblock{
+display: block;
+height: 30px;
+}
+.zeilenblock{
+display: inline-block;
+height: 30px;
+}
+.zentrieren{
+    margin: auto;
+    width: 60%;
+    border: 3px solid brown;
+    text-align: center;
+}
+.bildzentrieren{
+    margin: auto;
+    width: 40%;
+    display: block;
+}
+.formstyle{
+    margin: auto;
+    background-color: rgb(202, 202, 202);
+    width: 1000px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.redbutton{
+    background-color: red;
+    width: 100%;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.redbutton:hover{
+    background-color: aqua;
+}
+input[type=text], input[type=password], select{
+    width: 100%;
+    padding: 15px 20px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+.lesefenster{
+margin: auto;
+background-color: bisque;
+width: 200px;
+height: 100px;
+ overflow: auto;
 }
