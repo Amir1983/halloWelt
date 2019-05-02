@@ -1,6 +1,20 @@
 .amir{
     color: blue;
 }
+h1::before{
+    content: "+";
+    background-color: #801515;
+
+}
+.iconstyle{
+    height: 100px;
+    width: 100px;
+}
+
+h1::after{
+    content: "!";
+    color: green;
+}
 
 h3 + div{
     position: relative;
@@ -12,6 +26,8 @@ h3 + div{
     /* transition: all 2s */
     
 }
+
+
 
 h3 + div:hover{
     background: linear-gradient(-45deg, blue, red, yellow);
@@ -28,6 +44,18 @@ h3 + div:hover{
     left: 0px;
     text-align: right;
     font-size: 20px;
+}
+
+#gestreiftebox{
+    height: 200px;
+    width: 200px;
+    background: repeating-linear-gradient(to bottom, red 0px, red 5px, white 5px, white 10px);
+}
+
+#neuebox{
+    height: 250px;
+    width: 250px;
+    background: radial-gradient(blue, yellow);
 }
 a{
     background-color: white;
@@ -109,6 +137,10 @@ table{
     width: 25%;
     border-collapse: collapse;
 
+}
+
+td:first-child{
+    background-color:violet;
 }
 
 td{
